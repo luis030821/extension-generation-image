@@ -5,7 +5,7 @@
 
 import JSZip from "jszip";
 
-export async function downloadImages(imagenes) {
+export async function downloadImages(imagenes: { name: string; img: Blob }[]) {
   // []{img:setInterval,name:any}
   // Crear una instancia de JSZip
   const zip = new JSZip();
