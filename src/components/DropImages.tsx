@@ -45,7 +45,10 @@ export function DropImages() {
           ))}
         </select>
         {filesOp != undefined ? (
-          <button onClick={download}>Descargar</button>
+          <>
+            <button onClick={optimizationFetch}>Generar</button>
+            <button onClick={download}>Descargar</button>
+          </>
         ) : (
           <button onClick={optimizationFetch}>Generar</button>
         )}

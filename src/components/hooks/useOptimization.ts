@@ -11,8 +11,7 @@ function useOptimization(
 ) {
   const optimizationFetch = async () => {
     // https://imagescompress-luisgarrido0987.b4a.run
-    //http://localhost:3001
-    const url = `http://localhost:3001/?`;
+    const url = `https://imagescompress-luisgarrido0987.b4a.run/?`;
     toast.promise(
       async () => {
         const s = await fetch(icon);
